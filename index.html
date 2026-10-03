@@ -1,4 +1,3 @@
-https://cydwongad.github.io/orbit-job-tracker/index.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -27,16 +26,21 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
       --radius-md: 16px;
     }
 
-    * { box-sizing: border-box; }
+    * {
+      box-sizing: border-box;
+    }
 
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       min-width: 320px;
       margin: 0;
       overflow-x: hidden;
       color: var(--text);
-      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-family: Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
+        "Segoe UI", sans-serif;
       background:
         radial-gradient(circle at 9% 7%, rgba(81, 185, 255, 0.18), transparent 27rem),
         radial-gradient(circle at 90% 4%, rgba(154, 140, 255, 0.15), transparent 26rem),
@@ -58,9 +62,20 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
       mask-image: linear-gradient(to bottom, black, transparent 88%);
     }
 
-    button, input, select, textarea { font: inherit; }
-    button { cursor: pointer; }
-    a { color: inherit; }
+    button,
+    input,
+    select,
+    textarea {
+      font: inherit;
+    }
+
+    button {
+      cursor: pointer;
+    }
+
+    a {
+      color: inherit;
+    }
 
     button:focus-visible,
     a:focus-visible,
@@ -71,7 +86,9 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
       outline-offset: 3px;
     }
 
-    .hidden { display: none !important; }
+    .hidden {
+      display: none !important;
+    }
 
     .app-shell {
       width: min(1480px, calc(100% - 32px));
@@ -279,11 +296,21 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
     }
 
     @keyframes pulse {
-      70% { box-shadow: 0 0 0 9px rgba(81, 246, 223, 0); }
-      100% { box-shadow: 0 0 0 0 rgba(81, 246, 223, 0); }
+      70% {
+        box-shadow: 0 0 0 9px rgba(81, 246, 223, 0);
+      }
+
+      100% {
+        box-shadow: 0 0 0 0 rgba(81, 246, 223, 0);
+      }
     }
 
-    h1, h2, h3, p { margin-top: 0; }
+    h1,
+    h2,
+    h3,
+    p {
+      margin-top: 0;
+    }
 
     h1 {
       max-width: 780px;
@@ -425,7 +452,9 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
       margin-bottom: 16px;
     }
 
-    .field-wrap { position: relative; }
+    .field-wrap {
+      position: relative;
+    }
 
     .field-wrap svg {
       position: absolute;
@@ -457,7 +486,9 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
       padding: 0 13px;
     }
 
-    .search-input { padding-left: 42px; }
+    .search-input {
+      padding-left: 42px;
+    }
 
     .search-input::placeholder,
     .form-input::placeholder,
@@ -473,9 +504,13 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
       border-color: rgba(81, 185, 255, 0.38);
     }
 
-    .filters { justify-content: flex-end; }
+    .filters {
+      justify-content: flex-end;
+    }
 
-    .applications-panel { overflow: hidden; }
+    .applications-panel {
+      overflow: hidden;
+    }
 
     .table-header {
       display: flex;
@@ -730,8 +765,13 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
       line-height: 1.5;
     }
 
-    .application-form { padding: 23px 26px 26px; }
-    .form-section { margin-bottom: 25px; }
+    .application-form {
+      padding: 23px 26px 26px;
+    }
+
+    .form-section {
+      margin-bottom: 25px;
+    }
 
     .form-section-title {
       display: flex;
@@ -751,8 +791,13 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
       gap: 15px;
     }
 
-    .form-group { min-width: 0; }
-    .form-group.full { grid-column: 1 / -1; }
+    .form-group {
+      min-width: 0;
+    }
+
+    .form-group.full {
+      grid-column: 1 / -1;
+    }
 
     label {
       display: block;
@@ -762,7 +807,9 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
       font-weight: 680;
     }
 
-    .required { color: var(--cyan); }
+    .required {
+      color: var(--cyan);
+    }
 
     .form-input,
     .form-select,
@@ -798,7 +845,9 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
       border-top: 1px solid var(--line);
     }
 
-    .modal-footer .button-row { margin-left: auto; }
+    .modal-footer .button-row {
+      margin-left: auto;
+    }
 
     .danger-button {
       color: #ffbdc6;
@@ -817,7 +866,7 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
 
     .toast {
       position: fixed;
-      z-index: 110;
+      z-index: 10;
       right: 20px;
       bottom: 20px;
       display: flex;
@@ -994,186 +1043,51 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
     }
 
     @keyframes planetFloat {
-      from { transform: translate3d(0, 0, 0) rotate(-4deg); }
-      to { transform: translate3d(-16px, 14px, 0) rotate(4deg); }
+      from {
+        transform: translate3d(0, 0, 0) rotate(-4deg);
+      }
+
+      to {
+        transform: translate3d(-16px, 14px, 0) rotate(4deg);
+      }
     }
 
     @keyframes planetFloatReverse {
-      from { transform: translate3d(0, 0, 0) rotate(5deg); }
-      to { transform: translate3d(13px, -12px, 0) rotate(-4deg); }
+      from {
+        transform: translate3d(0, 0, 0) rotate(5deg);
+      }
+
+      to {
+        transform: translate3d(13px, -12px, 0) rotate(-4deg);
+      }
     }
 
     @keyframes moonOrbit {
-      from { transform: translate3d(0, 0, 0) scale(1); }
-      to { transform: translate3d(-22px, -12px, 0) scale(1.08); }
+      from {
+        transform: translate3d(0, 0, 0) scale(1);
+      }
+
+      to {
+        transform: translate3d(-22px, -12px, 0) scale(1.08);
+      }
     }
 
     @keyframes starsDrift {
-      from { transform: translate3d(0, 0, 0); opacity: 0.42; }
-      to { transform: translate3d(-10px, 6px, 0); opacity: 0.78; }
-    }
+      from {
+        transform: translate3d(0, 0, 0);
+        opacity: 0.42;
+      }
 
-    /* Commander setup */
-
-    .commander-setup {
-      position: fixed;
-      z-index: 100;
-      inset: 0;
-      display: grid;
-      padding: 20px;
-      place-items: center;
-      overflow: hidden;
-      background:
-        radial-gradient(circle at 20% 14%, rgba(81, 185, 255, 0.2), transparent 28rem),
-        radial-gradient(circle at 80% 87%, rgba(154, 140, 255, 0.22), transparent 31rem),
-        rgba(4, 10, 19, 0.96);
-      transition: opacity 420ms ease, visibility 420ms ease;
-    }
-
-    .commander-setup.is-hidden {
-      visibility: hidden;
-      opacity: 0;
-      pointer-events: none;
-    }
-
-    .setup-stars {
-      position: absolute;
-      inset: 0;
-      opacity: 0.76;
-      background-image:
-        radial-gradient(circle at 8% 12%, #fff 0 1px, transparent 1.5px),
-        radial-gradient(circle at 18% 62%, #7cf8e6 0 1px, transparent 1.5px),
-        radial-gradient(circle at 35% 31%, #fff 0 1px, transparent 1.5px),
-        radial-gradient(circle at 61% 13%, #b4a7ff 0 1px, transparent 1.5px),
-        radial-gradient(circle at 78% 42%, #fff 0 1px, transparent 1.5px),
-        radial-gradient(circle at 91% 73%, #85e7ff 0 1px, transparent 1.5px),
-        radial-gradient(circle at 48% 87%, #fff 0 1px, transparent 1.5px);
-      animation: starsDrift 18s ease-in-out infinite alternate;
-    }
-
-    .setup-card {
-      position: relative;
-      z-index: 1;
-      width: min(580px, 100%);
-      padding: 42px;
-      overflow: hidden;
-      border: 1px solid rgba(137, 201, 255, 0.22);
-      border-radius: 28px;
-      box-shadow: 0 30px 110px rgba(0, 0, 0, 0.52);
-      background:
-        radial-gradient(circle at 100% 0%, rgba(81, 246, 223, 0.09), transparent 20rem),
-        rgba(12, 27, 47, 0.86);
-      backdrop-filter: blur(18px);
-    }
-
-    .setup-eyebrow {
-      display: inline-flex;
-      align-items: center;
-      gap: 8px;
-      margin-bottom: 15px;
-      color: var(--cyan);
-      font-size: 0.75rem;
-      font-weight: 800;
-      letter-spacing: 0.13em;
-      text-transform: uppercase;
-    }
-
-    .setup-card h2 {
-      position: relative;
-      z-index: 2;
-      margin: 0 0 14px;
-      font-size: clamp(2rem, 5vw, 3.2rem);
-      line-height: 1.04;
-      letter-spacing: -0.06em;
-    }
-
-    .setup-copy {
-      position: relative;
-      z-index: 2;
-      max-width: 420px;
-      margin: 0 0 25px;
-      color: var(--muted);
-      line-height: 1.62;
-    }
-
-    .commander-form {
-      position: relative;
-      z-index: 2;
-    }
-
-    .commander-form label {
-      margin-bottom: 8px;
-      color: #d6e5f5;
-      font-size: 0.78rem;
-      font-weight: 750;
-    }
-
-    .commander-input-row {
-      display: flex;
-      gap: 10px;
-    }
-
-    .commander-input-row input {
-      width: 100%;
-      min-width: 0;
-      height: 48px;
-      padding: 0 14px;
-      color: var(--text);
-      border: 1px solid var(--line);
-      border-radius: 12px;
-      outline: none;
-      background: rgba(3, 12, 24, 0.68);
-    }
-
-    .commander-input-row input::placeholder { color: #667c93; }
-
-    .commander-input-row input:focus {
-      border-color: rgba(81, 246, 223, 0.68);
-      box-shadow: 0 0 0 4px rgba(81, 246, 223, 0.1);
-    }
-
-    .setup-note {
-      position: relative;
-      z-index: 2;
-      margin: 13px 0 0;
-      color: #71879b;
-      font-size: 0.72rem;
-    }
-
-    .setup-planet {
-      position: absolute;
-      top: -120px;
-      right: -103px;
-      width: 268px;
-      height: 268px;
-      opacity: 0.76;
-      border-radius: 50%;
-      background:
-        radial-gradient(circle at 31% 25%, #d7ffff 0 3%, transparent 5%),
-        radial-gradient(circle at 35% 30%, #69e8ff 0 10%, transparent 23%),
-        radial-gradient(circle at 74% 74%, #5539bf 0 23%, transparent 45%),
-        linear-gradient(145deg, #61f0dd, #327bdc 55%, #8e5be6);
-      box-shadow:
-        inset -28px -32px 44px rgba(3, 8, 28, 0.72),
-        0 0 55px rgba(81, 185, 255, 0.23);
-      transform: rotate(-12deg);
-    }
-
-    .setup-planet-ring {
-      position: absolute;
-      top: 42%;
-      left: -28%;
-      width: 154%;
-      height: 28%;
-      border: 13px solid rgba(189, 154, 255, 0.65);
-      border-right-color: rgba(90, 236, 255, 0.72);
-      border-radius: 50%;
-      box-shadow: 0 0 18px rgba(154, 140, 255, 0.36);
-      transform: rotate(-23deg);
+      to {
+        transform: translate3d(-10px, 6px, 0);
+        opacity: 0.78;
+      }
     }
 
     @media (max-width: 1120px) {
-      .metric-grid { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+      .metric-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
 
       .application-card {
         grid-template-columns: minmax(220px, 1.2fr) minmax(155px, 0.75fr) minmax(120px, 0.55fr) auto;
@@ -1192,24 +1106,39 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
         grid-template-columns: 1fr;
       }
 
-      .topbar { flex-direction: column; }
+      .topbar {
+        flex-direction: column;
+      }
 
       .top-actions {
         width: 100%;
         justify-content: flex-end;
       }
 
-      .hero-copy { padding: 27px; }
-      .focus-panel { min-height: 190px; }
-      .control-panel { grid-template-columns: 1fr 1fr; }
-      .filters { justify-content: flex-start; }
+      .hero-copy {
+        padding: 27px;
+      }
+
+      .focus-panel {
+        min-height: 190px;
+      }
+
+      .control-panel {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .filters {
+        justify-content: flex-start;
+      }
 
       .application-card {
         grid-template-columns: 1fr auto;
         gap: 14px;
       }
 
-      .application-card .application-company { grid-column: 1 / 2; }
+      .application-card .application-company {
+        grid-column: 1 / 2;
+      }
 
       .application-card .card-actions {
         grid-column: 2 / 3;
@@ -1222,7 +1151,9 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
         display: block;
       }
 
-      .application-card .status-area { grid-column: 1 / 2; }
+      .application-card .status-area {
+        grid-column: 1 / 2;
+      }
 
       .planet-large {
         top: -132px;
@@ -1238,18 +1169,8 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
         opacity: 0.34;
       }
 
-      .moon { right: 11%; }
-    }
-
-    @media (max-width: 600px) {
-      .setup-card { padding: 29px 23px; }
-      .commander-input-row { flex-direction: column; }
-      .commander-input-row .primary-button { width: 100%; }
-
-      .setup-planet {
-        top: -130px;
-        right: -130px;
-        opacity: 0.42;
+      .moon {
+        right: 11%;
       }
     }
 
@@ -1265,20 +1186,34 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
       }
 
       .top-actions .secondary-button,
-      .top-actions .primary-button { width: 100%; }
+      .top-actions .primary-button {
+        width: 100%;
+      }
 
-      .hero-copy { padding: 23px; }
+      .hero-copy {
+        padding: 23px;
+      }
 
-      .metric-grid { grid-template-columns: repeat(2, minmax(0, 1fr)); }
-      .metric-card:last-child { grid-column: 1 / -1; }
-      .control-panel { grid-template-columns: 1fr; }
+      .metric-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+      }
+
+      .metric-card:last-child {
+        grid-column: 1 / -1;
+      }
+
+      .control-panel {
+        grid-template-columns: 1fr;
+      }
 
       .filters {
         display: grid;
         grid-template-columns: 1fr 1fr;
       }
 
-      .filters .secondary-button { width: 100%; }
+      .filters .secondary-button {
+        width: 100%;
+      }
 
       .table-header {
         align-items: flex-start;
@@ -1302,8 +1237,13 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
         padding-left: 18px;
       }
 
-      .form-grid { grid-template-columns: 1fr; }
-      .form-group.full { grid-column: auto; }
+      .form-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .form-group.full {
+        grid-column: auto;
+      }
 
       .modal-footer {
         align-items: stretch;
@@ -1315,7 +1255,9 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
         margin-left: 0;
       }
 
-      .modal-footer .button-row > * { flex: 1; }
+      .modal-footer .button-row > * {
+        flex: 1;
+      }
 
       .planet-large {
         top: -80px;
@@ -1325,7 +1267,9 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
         opacity: 0.3;
       }
 
-      .planet-ring { border-width: 11px; }
+      .planet-ring {
+        border-width: 11px;
+      }
 
       .planet-small,
       .moon {
@@ -1338,8 +1282,7 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
       .planet-large,
       .planet-small,
       .moon,
-      .pulse,
-      .setup-stars {
+      .pulse {
         animation: none;
       }
     }
@@ -1347,65 +1290,11 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
 </head>
 
 <body>
-  <div
-    class="commander-setup"
-    id="commanderSetup"
-    role="dialog"
-    aria-modal="true"
-    aria-labelledby="setupTitle"
-  >
-    <div class="setup-stars" aria-hidden="true"></div>
-
-    <div class="setup-card">
-      <div class="setup-planet" aria-hidden="true">
-        <span class="setup-planet-ring"></span>
-      </div>
-
-      <p class="setup-eyebrow">
-        <span class="pulse"></span>
-        Orbit command centre
-      </p>
-
-      <h2 id="setupTitle">
-        Identify yourself,<br />
-        <span class="gradient-text">Commander.</span>
-      </h2>
-
-      <p class="setup-copy">
-        Personalise your job-search command centre. Your name stays saved on
-        this browser and device.
-      </p>
-
-      <form id="commanderForm" class="commander-form">
-        <label for="commanderName">Commander name</label>
-
-        <div class="commander-input-row">
-          <input
-            id="commanderName"
-            type="text"
-            maxlength="40"
-            autocomplete="name"
-            placeholder="e.g., Wong"
-            required
-          />
-
-          <button class="primary-button" type="submit">
-            Enter Orbit
-            <span aria-hidden="true">→</span>
-          </button>
-        </div>
-      </form>
-
-      <p class="setup-note">
-        Stored privately in this browser. No account or password required.
-      </p>
-    </div>
-  </div>
-
   <main class="app-shell">
     <header class="topbar">
       <div class="brand" aria-label="Orbit job application tracker">
         <div class="brand-mark" aria-hidden="true"></div>
+
         <div>
           <p class="brand-name">ORBIT</p>
           <p class="brand-subtitle">Application command centre</p>
@@ -1413,10 +1302,6 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
       </div>
 
       <div class="top-actions">
-        <button class="secondary-button" id="changeCommanderButton" type="button">
-          Change commander
-        </button>
-
         <button class="secondary-button" id="importButton" type="button">
           Import data
         </button>
@@ -1456,7 +1341,7 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
 
         <h1 id="pageTitle">
           Welcome back,<br />
-          <span class="gradient-text" id="commanderGreeting">Commander.</span>
+          <span class="gradient-text">Commander Wong.</span>
         </h1>
 
         <p>
@@ -1743,7 +1628,12 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
         <div class="form-grid">
           <div class="form-group full">
             <label for="notes">Research, interview notes, application details</label>
-            <textarea class="form-textarea" id="notes" name="notes" placeholder="Example: Spoke with an analyst at the firm. Focus on M&A deal examples and Hong Kong market outlook for interviews."></textarea>
+            <textarea
+              class="form-textarea"
+              id="notes"
+              name="notes"
+              placeholder="Example: Spoke with an analyst at the firm. Focus on M&A deal examples and Hong Kong market outlook for interviews."
+            ></textarea>
           </div>
         </div>
       </section>
@@ -1754,8 +1644,13 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
         </button>
 
         <div class="button-row">
-          <button class="secondary-button" id="cancelButton" type="button">Cancel</button>
-          <button class="primary-button" type="submit">Save application</button>
+          <button class="secondary-button" id="cancelButton" type="button">
+            Cancel
+          </button>
+
+          <button class="primary-button" type="submit">
+            Save application
+          </button>
         </div>
       </div>
     </form>
@@ -1770,7 +1665,6 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
 
   <script>
     const STORAGE_KEY = "orbit-job-tracker-applications-v1";
-    const COMMANDER_NAME_KEY = "orbit-commander-name";
 
     const statuses = [
       "Saved",
@@ -1822,12 +1716,7 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
       exportButton: document.getElementById("exportButton"),
       importButton: document.getElementById("importButton"),
       importInput: document.getElementById("importInput"),
-      loadDemoButton: document.getElementById("loadDemoButton"),
-      commanderSetup: document.getElementById("commanderSetup"),
-      commanderForm: document.getElementById("commanderForm"),
-      commanderName: document.getElementById("commanderName"),
-      commanderGreeting: document.getElementById("commanderGreeting"),
-      changeCommanderButton: document.getElementById("changeCommanderButton")
+      loadDemoButton: document.getElementById("loadDemoButton")
     };
 
     let applications = loadApplications();
@@ -1871,11 +1760,15 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
     }
 
     function formatShortDate(value) {
-      if (!value) return "No date";
+      if (!value) {
+        return "No date";
+      }
 
       const date = new Date(`${value}T00:00:00`);
 
-      if (Number.isNaN(date.getTime())) return value;
+      if (Number.isNaN(date.getTime())) {
+        return value;
+      }
 
       return new Intl.DateTimeFormat("en-GB", {
         day: "numeric",
@@ -1884,59 +1777,34 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
     }
 
     function daysFromToday(dateString) {
-      if (!dateString) return null;
+      if (!dateString) {
+        return null;
+      }
 
       const today = new Date();
       today.setHours(0, 0, 0, 0);
 
       const date = new Date(`${dateString}T00:00:00`);
 
-      if (Number.isNaN(date.getTime())) return null;
+      if (Number.isNaN(date.getTime())) {
+        return null;
+      }
 
       return Math.round((date - today) / 86400000);
     }
 
-    function formatCommanderName(name) {
-      const clean = String(name || "").trim();
-
-      if (!clean) return "Commander";
-
-      return /^commander\b/i.test(clean)
-        ? clean
-        : `Commander ${clean}`;
-    }
-
-    function loadCommanderProfile() {
-      const savedName = localStorage.getItem(COMMANDER_NAME_KEY);
-
-      if (savedName && savedName.trim()) {
-        els.commanderGreeting.textContent = formatCommanderName(savedName);
-        els.commanderSetup.classList.add("is-hidden");
-      } else {
-        els.commanderSetup.classList.remove("is-hidden");
-
-        setTimeout(() => {
-          els.commanderName.focus();
-        }, 150);
-      }
-    }
-
-    function saveCommanderProfile(name) {
-      localStorage.setItem(COMMANDER_NAME_KEY, name.trim());
-      els.commanderGreeting.textContent = formatCommanderName(name);
-      els.commanderSetup.classList.add("is-hidden");
-      showToast(`Welcome to Orbit, ${formatCommanderName(name)}.`);
-    }
-
     function getDueApplications() {
       return applications.filter(app => {
-        if (!app.nextActionDate) return false;
+        if (!app.nextActionDate) {
+          return false;
+        }
 
         if (["Rejected", "Withdrawn", "Closed", "Offer"].includes(app.status)) {
           return false;
         }
 
         const days = daysFromToday(app.nextActionDate);
+
         return days !== null && days <= 7;
       });
     }
@@ -1955,10 +1823,13 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
           app.notes,
           app.contactName,
           app.source
-        ].join(" ").toLowerCase();
+        ]
+          .join(" ")
+          .toLowerCase();
 
         const matchesQuery = !query || haystack.includes(query);
-        const matchesStatus = selectedStatus === "All" || app.status === selectedStatus;
+        const matchesStatus =
+          selectedStatus === "All" || app.status === selectedStatus;
 
         return matchesQuery && matchesStatus;
       });
@@ -1975,6 +1846,7 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
         if (sortBy === "nextAction") {
           const aDate = a.nextActionDate || "9999-12-31";
           const bDate = b.nextActionDate || "9999-12-31";
+
           return aDate.localeCompare(bDate);
         }
 
@@ -1983,79 +1855,87 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
     }
 
     function renderMetrics() {
-      els.totalMetric.textContent = applications.length;
+      const total = applications.length;
 
-      els.appliedMetric.textContent = applications.filter(app =>
+      const applied = applications.filter(app =>
         ["Applied", "Screening", "Interview", "Offer"].includes(app.status)
       ).length;
 
-      els.interviewMetric.textContent = applications.filter(app =>
+      const interviews = applications.filter(app =>
         ["Screening", "Interview"].includes(app.status)
       ).length;
 
-      els.offerMetric.textContent = applications.filter(app => app.status === "Offer").length;
-      els.actionMetric.textContent = getDueApplications().length;
+      const offers = applications.filter(app => app.status === "Offer").length;
+      const due = getDueApplications().length;
+
+      els.totalMetric.textContent = total;
+      els.appliedMetric.textContent = applied;
+      els.interviewMetric.textContent = interviews;
+      els.offerMetric.textContent = offers;
+      els.actionMetric.textContent = due;
     }
 
     function renderFocus() {
-  const activeApplications = applications.filter(app =>
-    app.nextActionDate &&
-    !["Rejected", "Withdrawn", "Closed", "Offer"].includes(app.status)
-  );
+      const activeApplications = applications.filter(app =>
+        app.nextActionDate &&
+        !["Rejected", "Withdrawn", "Closed", "Offer"].includes(app.status)
+      );
 
-  const upcomingActions = activeApplications
-    .filter(app => daysFromToday(app.nextActionDate) >= 0)
-    .sort((a, b) => a.nextActionDate.localeCompare(b.nextActionDate));
+      const upcomingActions = activeApplications
+        .filter(app => daysFromToday(app.nextActionDate) >= 0)
+        .sort((a, b) => a.nextActionDate.localeCompare(b.nextActionDate));
 
-  const overdueActions = activeApplications
-    .filter(app => daysFromToday(app.nextActionDate) < 0)
-    .sort((a, b) => a.nextActionDate.localeCompare(b.nextActionDate));
+      const overdueActions = activeApplications
+        .filter(app => daysFromToday(app.nextActionDate) < 0)
+        .sort((a, b) => a.nextActionDate.localeCompare(b.nextActionDate));
 
-  const nextApplication = upcomingActions[0] || overdueActions[0];
+      const nextApplication = upcomingActions[0] || overdueActions[0];
 
-  if (!nextApplication) {
-    els.focusContent.innerHTML = `
-      <h2 class="focus-title">Clear skies ahead.</h2>
-      <p class="focus-empty">
-        Add an application or set a next-action date to turn this into your next move.
-      </p>
-    `;
-    return;
-  }
+      if (!nextApplication) {
+        els.focusContent.innerHTML = `
+          <h2 class="focus-title">Clear skies ahead.</h2>
+          <p class="focus-empty">
+            Add an application or set a next-action date to turn this into your next move.
+          </p>
+        `;
+        return;
+      }
 
-  const dayDifference = daysFromToday(nextApplication.nextActionDate);
-  let dateLabel;
+      const dayDifference = daysFromToday(nextApplication.nextActionDate);
+      let dateLabel;
 
-  if (dayDifference === 0) {
-    dateLabel = "Today";
-  } else if (dayDifference === 1) {
-    dateLabel = "Tomorrow";
-  } else if (dayDifference > 1) {
-    dateLabel = `In ${dayDifference} days`;
-  } else {
-    const overdueDays = Math.abs(dayDifference);
-    dateLabel = `${overdueDays} day${overdueDays === 1 ? "" : "s"} overdue`;
-  }
+      if (dayDifference === 0) {
+        dateLabel = "Today";
+      } else if (dayDifference === 1) {
+        dateLabel = "Tomorrow";
+      } else if (dayDifference > 1) {
+        dateLabel = `In ${dayDifference} days`;
+      } else {
+        const overdueDays = Math.abs(dayDifference);
+        dateLabel = `${overdueDays} day${overdueDays === 1 ? "" : "s"} overdue`;
+      }
 
-  els.focusContent.innerHTML = `
-    <h2 class="focus-title">
-      ${escapeHtml(nextApplication.nextAction || "Follow up")}<br />
-      ${escapeHtml(nextApplication.company)}
-    </h2>
-    <p class="focus-date">
-      ${dateLabel} · ${formatShortDate(nextApplication.nextActionDate)}
-    </p>
-  `;
-}
+      els.focusContent.innerHTML = `
+        <h2 class="focus-title">
+          ${escapeHtml(nextApplication.nextAction || "Follow up")}<br />
+          ${escapeHtml(nextApplication.company)}
+        </h2>
+        <p class="focus-date">
+          ${dateLabel} · ${formatShortDate(nextApplication.nextActionDate)}
+        </p>
+      `;
+    }
 
     function renderApplications() {
       const filtered = getFilteredApplications();
       const total = applications.length;
 
-      els.resultsCount.textContent =
+      const wording =
         total === filtered.length
           ? `${total} application${total === 1 ? "" : "s"} in your pipeline`
           : `${filtered.length} of ${total} applications shown`;
+
+      els.resultsCount.textContent = wording;
 
       if (!filtered.length) {
         const isEmpty = applications.length === 0;
@@ -2063,106 +1943,142 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
         els.applicationList.innerHTML = `
           <div class="empty-state">
             <div class="empty-orbit" aria-hidden="true">✦</div>
-            <h3>${isEmpty ? "Your orbit is ready." : "No applications match this view."}</h3>
-            <p>${
-              isEmpty
-                ? "Add your first target role and turn your job search into a clear, trackable pipeline."
-                : "Try clearing your filters or searching for a different company, role, or location."
-            }</p>
+            <h3>${
+              isEmpty ? "Your orbit is ready." : "No applications match this view."
+            }</h3>
+            <p>
+              ${
+                isEmpty
+                  ? "Add your first target role and turn your job search into a clear, trackable pipeline."
+                  : "Try clearing your filters or searching for a different company, role, or location."
+              }
+            </p>
             <button class="primary-button" type="button" id="emptyStateButton">
               ${isEmpty ? "Add first application" : "Clear filters"}
             </button>
           </div>
         `;
 
-        document.getElementById("emptyStateButton").addEventListener("click", () => {
-          if (isEmpty) openCreateDialog();
-          else clearFilters();
-        });
+        document
+          .getElementById("emptyStateButton")
+          .addEventListener("click", () => {
+            if (isEmpty) {
+              openCreateDialog();
+            } else {
+              clearFilters();
+            }
+          });
 
         return;
       }
 
-      els.applicationList.innerHTML = filtered.map(app => {
-        const statusOptions = statuses.map(status =>
-          `<option value="${status}" ${app.status === status ? "selected" : ""}>${status}</option>`
-        ).join("");
+      els.applicationList.innerHTML = filtered
+        .map(app => {
+          const statusOptions = statuses
+            .map(
+              status =>
+                `<option value="${status}" ${
+                  app.status === status ? "selected" : ""
+                }>${status}</option>`
+            )
+            .join("");
 
-        const nextText = app.nextActionDate
-          ? `${formatShortDate(app.nextActionDate)}${app.nextAction ? ` · ${escapeHtml(app.nextAction)}` : ""}`
-          : "No next action";
+          const nextText = app.nextActionDate
+            ? `${formatShortDate(app.nextActionDate)}${
+                app.nextAction ? ` · ${escapeHtml(app.nextAction)}` : ""
+              }`
+            : "No next action";
 
-        return `
-          <article class="application-card" data-id="${app.id}">
-            <div class="application-company">
-              <div class="company-avatar">${escapeHtml(getInitials(app.company))}</div>
+          return `
+            <article class="application-card" data-id="${app.id}">
+              <div class="application-company">
+                <div class="company-avatar">${escapeHtml(
+                  getInitials(app.company)
+                )}</div>
 
-              <div style="min-width: 0;">
-                <p class="company-name" title="${escapeHtml(app.company)}">${escapeHtml(app.company)}</p>
-                <p class="role-name" title="${escapeHtml(app.role)}">${escapeHtml(app.role)}</p>
+                <div style="min-width: 0;">
+                  <p class="company-name" title="${escapeHtml(app.company)}">
+                    ${escapeHtml(app.company)}
+                  </p>
+                  <p class="role-name" title="${escapeHtml(app.role)}">
+                    ${escapeHtml(app.role)}
+                  </p>
+                </div>
               </div>
-            </div>
 
-            <div class="detail-role">
-              <p class="detail-label">Location</p>
-              <p class="detail-value">${escapeHtml(app.location || "Not specified")}</p>
-            </div>
+              <div class="detail-role">
+                <p class="detail-label">Location</p>
+                <p class="detail-value">
+                  ${escapeHtml(app.location || "Not specified")}
+                </p>
+              </div>
 
-            <div class="detail-location">
-              <p class="detail-label">Applied</p>
-              <p class="detail-value">${formatShortDate(app.dateApplied)}</p>
-            </div>
+              <div class="detail-location">
+                <p class="detail-label">Applied</p>
+                <p class="detail-value">${formatShortDate(app.dateApplied)}</p>
+              </div>
 
-            <div class="detail-next">
-              <p class="detail-label">Next move</p>
-              <p class="detail-value" title="${escapeHtml(app.nextAction || "")}">${nextText}</p>
-            </div>
+              <div class="detail-next">
+                <p class="detail-label">Next move</p>
+                <p class="detail-value" title="${escapeHtml(
+                  app.nextAction || ""
+                )}">
+                  ${nextText}
+                </p>
+              </div>
 
-            <div class="status-area">
-              <label class="hidden" for="status-${app.id}">
-                Change status for ${escapeHtml(app.company)}
-              </label>
+              <div class="status-area">
+                <label class="hidden" for="status-${app.id}">
+                  Change status for ${escapeHtml(app.company)}
+                </label>
 
-              <select
-                class="status-button ${statusClassMap[app.status] || "status-saved"}"
-                id="status-${app.id}"
-                data-status-select="${app.id}"
-              >
-                ${statusOptions}
-              </select>
-            </div>
+                <select
+                  class="status-button ${
+                    statusClassMap[app.status] || "status-saved"
+                  }"
+                  id="status-${app.id}"
+                  data-status-select="${app.id}"
+                >
+                  ${statusOptions}
+                </select>
+              </div>
 
-            <div class="card-actions">
-              ${app.jobUrl ? `
-                <a
+              <div class="card-actions">
+                ${
+                  app.jobUrl
+                    ? `
+                      <a
+                        class="small-action"
+                        href="${escapeHtml(app.jobUrl)}"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="Open job posting for ${escapeHtml(app.company)}"
+                        title="Open job posting"
+                      >↗</a>
+                    `
+                    : ""
+                }
+
+                <button
                   class="small-action"
-                  href="${escapeHtml(app.jobUrl)}"
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  aria-label="Open job posting for ${escapeHtml(app.company)}"
-                  title="Open job posting"
-                >↗</a>
-              ` : ""}
+                  type="button"
+                  data-edit="${app.id}"
+                  aria-label="Edit ${escapeHtml(app.company)}"
+                  title="Edit application"
+                >✎</button>
 
-              <button
-                class="small-action"
-                type="button"
-                data-edit="${app.id}"
-                aria-label="Edit ${escapeHtml(app.company)}"
-                title="Edit application"
-              >✎</button>
-
-              <button
-                class="small-action delete"
-                type="button"
-                data-delete="${app.id}"
-                aria-label="Delete ${escapeHtml(app.company)}"
-                title="Delete application"
-              >⌫</button>
-            </div>
-          </article>
-        `;
-      }).join("");
+                <button
+                  class="small-action delete"
+                  type="button"
+                  data-delete="${app.id}"
+                  aria-label="Delete ${escapeHtml(app.company)}"
+                  title="Delete application"
+                >⌫</button>
+              </div>
+            </article>
+          `;
+        })
+        .join("");
 
       document.querySelectorAll("[data-status-select]").forEach(select => {
         select.addEventListener("change", event => {
@@ -2171,11 +2087,15 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
       });
 
       document.querySelectorAll("[data-edit]").forEach(button => {
-        button.addEventListener("click", () => openEditDialog(button.dataset.edit));
+        button.addEventListener("click", () => {
+          openEditDialog(button.dataset.edit);
+        });
       });
 
       document.querySelectorAll("[data-delete]").forEach(button => {
-        button.addEventListener("click", () => deleteApplication(button.dataset.delete));
+        button.addEventListener("click", () => {
+          deleteApplication(button.dataset.delete);
+        });
       });
     }
 
@@ -2192,12 +2112,17 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
       els.deleteInFormButton.classList.add("hidden");
       els.applicationDialog.showModal();
 
-      setTimeout(() => document.getElementById("company").focus(), 50);
+      setTimeout(() => {
+        document.getElementById("company").focus();
+      }, 50);
     }
 
     function openEditDialog(id) {
       const app = applications.find(item => item.id === id);
-      if (!app) return;
+
+      if (!app) {
+        return;
+      }
 
       els.applicationForm.reset();
       els.applicationId.value = app.id;
@@ -2205,23 +2130,47 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
       els.deleteInFormButton.classList.remove("hidden");
 
       const fields = [
-        "company", "role", "division", "status", "location", "workType", "jobUrl",
-        "source", "dateFound", "dateApplied", "deadline", "nextActionDate",
-        "nextAction", "contactName", "contactEmail", "resumeVersion", "coverLetter",
-        "salary", "priority", "notes"
+        "company",
+        "role",
+        "division",
+        "status",
+        "location",
+        "workType",
+        "jobUrl",
+        "source",
+        "dateFound",
+        "dateApplied",
+        "deadline",
+        "nextActionDate",
+        "nextAction",
+        "contactName",
+        "contactEmail",
+        "resumeVersion",
+        "coverLetter",
+        "salary",
+        "priority",
+        "notes"
       ];
 
       fields.forEach(field => {
         const input = document.getElementById(field);
-        if (input) input.value = app[field] || "";
+
+        if (input) {
+          input.value = app[field] || "";
+        }
       });
 
       els.applicationDialog.showModal();
-      setTimeout(() => document.getElementById("company").focus(), 50);
+
+      setTimeout(() => {
+        document.getElementById("company").focus();
+      }, 50);
     }
 
     function closeDialog() {
-      if (els.applicationDialog.open) els.applicationDialog.close();
+      if (els.applicationDialog.open) {
+        els.applicationDialog.close();
+      }
     }
 
     function formToApplication() {
@@ -2259,7 +2208,11 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
     function updateStatus(id, newStatus) {
       applications = applications.map(app =>
         app.id === id
-          ? { ...app, status: newStatus, updatedAt: new Date().toISOString() }
+          ? {
+              ...app,
+              status: newStatus,
+              updatedAt: new Date().toISOString()
+            }
           : app
       );
 
@@ -2270,13 +2223,18 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
 
     function deleteApplication(id) {
       const app = applications.find(item => item.id === id);
-      if (!app) return;
+
+      if (!app) {
+        return;
+      }
 
       const confirmed = window.confirm(
         `Delete ${app.company} — ${app.role}? This cannot be undone.`
       );
 
-      if (!confirmed) return;
+      if (!confirmed) {
+        return;
+      }
 
       applications = applications.filter(item => item.id !== id);
       saveApplications();
@@ -2315,10 +2273,28 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
       }
 
       const columns = [
-        "company", "role", "division", "status", "location", "workType", "jobUrl",
-        "source", "dateFound", "dateApplied", "deadline", "nextActionDate",
-        "nextAction", "contactName", "contactEmail", "resumeVersion", "coverLetter",
-        "salary", "priority", "notes", "createdAt", "updatedAt"
+        "company",
+        "role",
+        "division",
+        "status",
+        "location",
+        "workType",
+        "jobUrl",
+        "source",
+        "dateFound",
+        "dateApplied",
+        "deadline",
+        "nextActionDate",
+        "nextAction",
+        "contactName",
+        "contactEmail",
+        "resumeVersion",
+        "coverLetter",
+        "salary",
+        "priority",
+        "notes",
+        "createdAt",
+        "updatedAt"
       ];
 
       const csv = [
@@ -2328,7 +2304,10 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
         )
       ].join("\n");
 
-      const blob = new Blob([csv], { type: "text/csv;charset=utf-8;" });
+      const blob = new Blob([csv], {
+        type: "text/csv;charset=utf-8;"
+      });
+
       const url = URL.createObjectURL(blob);
       const link = document.createElement("a");
       const date = new Date().toISOString().slice(0, 10);
@@ -2347,19 +2326,19 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
       let quoted = false;
 
       for (let i = 0; i < line.length; i += 1) {
-        const character = line[i];
+        const char = line[i];
         const next = line[i + 1];
 
-        if (character === '"' && quoted && next === '"') {
+        if (char === '"' && quoted && next === '"') {
           current += '"';
           i += 1;
-        } else if (character === '"') {
+        } else if (char === '"') {
           quoted = !quoted;
-        } else if (character === "," && !quoted) {
+        } else if (char === "," && !quoted) {
           result.push(current);
           current = "";
         } else {
-          current += character;
+          current += char;
         }
       }
 
@@ -2391,6 +2370,7 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
             .slice(1)
             .map(line => {
               const values = parseCSVLine(line);
+
               const raw = Object.fromEntries(
                 headers.map((header, index) => [header, values[index] || ""])
               );
@@ -2433,7 +2413,9 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
             }? They will be added to your current tracker.`
           );
 
-          if (!confirmed) return;
+          if (!confirmed) {
+            return;
+          }
 
           applications = [...imported, ...applications];
           saveApplications();
@@ -2458,7 +2440,9 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
           "Demo data will be added to your current tracker. Continue?"
         );
 
-        if (!confirmed) return;
+        if (!confirmed) {
+          return;
+        }
       }
 
       const today = new Date();
@@ -2491,7 +2475,8 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
           coverLetter: "Submitted",
           salary: "Not listed",
           priority: "High",
-          notes: "Review valuation, accounting links, M&A rationale, and recent Asia deals.",
+          notes:
+            "Review valuation, accounting links, M&A rationale, and recent Asia deals.",
           createdAt: new Date(Date.now() - 900000).toISOString(),
           updatedAt: new Date().toISOString()
         },
@@ -2516,7 +2501,8 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
           coverLetter: "Submitted",
           salary: "Not listed",
           priority: "High",
-          notes: "Tailored investment interests toward multi-asset and ETF platform.",
+          notes:
+            "Tailored investment interests toward multi-asset and ETF platform.",
           createdAt: new Date(Date.now() - 800000).toISOString(),
           updatedAt: new Date().toISOString()
         },
@@ -2566,7 +2552,8 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
           coverLetter: "Not required",
           salary: "Not listed",
           priority: "Medium",
-          notes: "Prepare client suitability, market outlook, and motivation answers.",
+          notes:
+            "Prepare client suitability, market outlook, and motivation answers.",
           createdAt: new Date(Date.now() - 600000).toISOString(),
           updatedAt: new Date().toISOString()
         }
@@ -2578,31 +2565,10 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
       showToast("Demo applications loaded.");
     }
 
-    els.commanderForm.addEventListener("submit", event => {
-      event.preventDefault();
-
-      const name = els.commanderName.value.trim();
-
-      if (!name) {
-        els.commanderName.focus();
-        return;
-      }
-
-      saveCommanderProfile(name);
-    });
-
-    els.changeCommanderButton.addEventListener("click", () => {
-      els.commanderName.value = localStorage.getItem(COMMANDER_NAME_KEY) || "";
-      els.commanderSetup.classList.remove("is-hidden");
-
-      setTimeout(() => {
-        els.commanderName.focus();
-      }, 150);
-    });
-
     els.newApplicationButton.addEventListener("click", openCreateDialog);
     els.heroAddButton.addEventListener("click", openCreateDialog);
     els.quickAddButton.addEventListener("click", openCreateDialog);
+
     els.closeDialogButton.addEventListener("click", closeDialog);
     els.cancelButton.addEventListener("click", closeDialog);
 
@@ -2615,13 +2581,17 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
         event.clientY < rect.top ||
         event.clientY > rect.bottom;
 
-      if (clickedOutside) closeDialog();
+      if (clickedOutside) {
+        closeDialog();
+      }
     });
 
     els.applicationForm.addEventListener("submit", event => {
       event.preventDefault();
 
-      if (!els.applicationForm.reportValidity()) return;
+      if (!els.applicationForm.reportValidity()) {
+        return;
+      }
 
       const application = formToApplication();
       const exists = applications.some(app => app.id === application.id);
@@ -2657,19 +2627,23 @@ https://cydwongad.github.io/orbit-job-tracker/index.html
     els.clearFiltersButton.addEventListener("click", clearFilters);
 
     els.exportButton.addEventListener("click", exportCSV);
-    els.importButton.addEventListener("click", () => els.importInput.click());
+
+    els.importButton.addEventListener("click", () => {
+      els.importInput.click();
+    });
 
     els.importInput.addEventListener("change", event => {
       const [file] = event.target.files;
 
-      if (file) importCSV(file);
+      if (file) {
+        importCSV(file);
+      }
 
       event.target.value = "";
     });
 
     els.loadDemoButton.addEventListener("click", loadDemoData);
 
-    loadCommanderProfile();
     render();
   </script>
 </body>
